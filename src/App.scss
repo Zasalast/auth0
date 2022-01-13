@@ -1,0 +1,72 @@
+@import 'antd/dist/antd.css';
+// App.scss
+// include customized bootstrap
+@import './styles/config';
+// include all of Bootstrap
+@import 'bootstrap/scss/bootstrap';
+// define or include your other css below
+.App {
+  height: 100vh;
+}
+.App {
+  text-align: center;
+}
+.header-picture {
+  height: 5vmin;
+  pointer-events: none;
+  text-align: left;
+   justify-content: left;
+   background-color: #ffff;
+   border-radius: 50%;
+}
+.App-logo {
+  height: 100%;
+  width:  100%;
+    justify-content: center;
+   background-color: #ffff;
+}
+.App-header-login {
+  height: 75%;
+  width:  60%; 
+  border: 40%; 
+  padding: 20%;  
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+ 
+.App-header {
+  background-color: #0d810d;
+  min-height: 3vh;
+  max-height: 6vh;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-header-content {
+  background-color: #282c34;
+  min-height: 3vh;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(255, 255, 255);
+}
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

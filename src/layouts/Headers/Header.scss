@@ -1,3 +1,42 @@
+.App-nav {
+  background-color: rgb(3,204,108);;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+   color: #0d810d;
+   background: #282c34;
+  border-left: 100px;
+  
+}
+.App-logo {
+  height: 9.5vmin;
+  pointer-events: none;
+  background: white;
+  border-radius: 50%;
+}
+.App-header {
+ 
+  min-height: 2vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: right;
+  font-size: calc(10px + 2vmin);
+ 
+}
+a{/* border: 7px solid rgb(3,168,63);
+  border-radius: 5%; */
+   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+height: 10vh;}
+img{
+  margin-right: 30px;
+}
 .App {
   text-align: center;
 }
@@ -59,4 +98,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+@import '../../../sassStyles/mixins';
+@import '../../../sassStyles/variables';
+
+header {
+    margin: 20px 0 34px;
+
+    @include customMinBreakPoint(1024) {
+        margin: 40px 0 64px;
+    }
+
+   
 }
